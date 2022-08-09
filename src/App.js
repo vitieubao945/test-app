@@ -36,7 +36,7 @@ function App() {
           },
           {
             validator: (_, value) => {
-              const regex = new RegExp("^([a-z0-9]+@[a-z0-9]+\.[a-z]{2,3})*$");
+              const regex = new RegExp("^([a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]{2,3})*$");
               if (regex.test(value)) {
                 return Promise.resolve();
               } else {
